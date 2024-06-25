@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif Khmer", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* overflow-x: hidden; */
+}
+.menu{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    padding: 0px 30px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.menu .logo{
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;  
+}
+.logo img{
+    width: 140px;
+    height: 60px;
+    object-fit: cover;
+}
+.menu .link{
+    width: 70%;
+    height: 100%;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+}
+.menu .link ul{
+    display: flex;
+}
+.menu .link ul li{
+    list-style-type: none;
+}
+.menu .link ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: white;
+    position: relative;
+}
+.menu .link ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    bottom: -15px;
+    left: 0;
+    transition: 0.3s;
+}
+.menu .link ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    bottom: -15px;
+    right: 0;
+    transition: 0.3s;
+}
+.menu .link ul li a:hover::before {
+    width: 50%;
+    transition: 0.3s;
+}
+.menu .link ul li a:hover::after {
+    width: 50%;
+    transition: 0.3s;
+}
+.menu .icon{
+    width: 10%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.menu .icon ul li{
+    list-style-type: none;
+}
+.menu .icon ul li a i{
+    font-size:20px;
+    color: white;
+}
+/* ==================== Banner ================= */
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.177);
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+.banner .box-text{
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.box-text h1{
+    font-size: 45px;
+    color: white;
+}
+.box-text ul{
+    display: flex;
+    margin: 20px 0px 30px 0px;
+}
+.box-text ul li{
+    margin-right: 30px;
+    list-style-type: square;
+    color: white;
+}
+.box-text ul li a{
+    text-decoration: none;
+    color: white;
+}
+.box-text button[type="button"]{
+    width: 150px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+}
+#btn1:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+}
+#btn2{
+    background-color: rgba(128, 128, 128, 0.417);
+    color: white;
+}
+#btn2:hover{
+    background-color: red;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    padding: 0px 50px;
+}
+.container .con-left{
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.con-left h1{
+    font-size: 25px;
+    position: relative;
+}
+.con-left h1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    bottom: -20px;
+}
+.container .con-right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .con-right .box{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.con-right .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main{
+    width: 100%;
+    height: 350px;
+    /* background-color: aqua; */
+    margin-top: 5rem;
+    padding: 0px 50px;
+    display: flex;
+    margin-bottom: 5rem;
+}
+.main .main-left{
+    width: 20%;
+    height: 100%;
+    /* background-color: brown; */
+    padding: 7rem 0px;
+}
+.main-left #btn_add{
+    width: 180px;
+    padding: 14px 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+}.main .main-right{
+    width: 80%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+.main .main-right .item{
+    width: 31%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px rgb(144, 141, 141);
+}
+.main .main-right .item .image{
+    width: 100%;
+    height: 48%;
+    /* background-color: cadetblue; */
+    border-radius: 5px;
+    overflow: hidden;
+}.main .main-right .item:hover .image img{
+    transform: scale(1.1);
+}
+.main .main-right .item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main .main-right .item .title{
+    width: 100%;
+    height: 32%;
+    /* background-color: blue; */
+    padding: 15px 10px;
+}
+.main .main-right .item .title #news{
+    padding: 1px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(202, 198, 198, 0.814);
+    margin-bottom: 15px;
+}
+.main ,.main-right .item .title #news:hover{
+    color: red;
+    background-color: azure;
+}
+.main .main-right .item .title p a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.main .main-right .item .title p a:hover{
+    text-decoration: underline;
+}
+.main .main-right .item .profile{
+    width: 100%;
+    height: 20%;
+    /* background-color: darkgoldenrod; */
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+.main .main-right .item .profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px
+}
+.total-text{
+    width: 100%;
+    height: 120vh;
+    /* background-color: aqua; */
+    padding: 0 50px;
+}
+.total-text .total-menu{
+    width: 100%;
+    height: 15%;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+}
+.total-text .total-main{
+    width: 100%;
+    height: 85%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+.total-text .total-main .t-main-box1{
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.488);
+    position: relative;
+    overflow: hidden;
+}
+.t-main-box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.total-text .total-main .t-main-box1:hover img{
+    transform: scale(1.1);
+}
+.total-text .total-main .t-main-box2{
+    width: 38%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.total-text .total-main .t-main-box2 .t-main-b2-up{
+    width: 100%;
+    height: 48%;
+    background-color: rgba(0, 0, 0, 0.714);
+    position: relative;
+    overflow: hidden;
+}
+.t-main-box2 .t-main-b2-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.t-main-box2 .t-main-b2-up:hover img{
+    transform: scale(1.1);
+}
+.total-text .total-main .t-main-box2 .t-main-b2-down{
+    width: 100%;
+    height: 49%;
+    background-color: rgba(0, 0, 0, 0.73);
+    margin-top: 19px;
+    position: relative;
+    overflow: hidden;
+}
+.t-main-box2 .t-main-b2-down img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.t-main-box2 .t-main-b2-down:hover img{
+    transform: scale(1.1);
+}
+.discription{
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
+    position: absolute;
+    top: 35%;
+}
+.discription p{
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+.discription p::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    bottom: -10px;
+}
+.discription h1{
+    color: white;
+}
+.discription h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

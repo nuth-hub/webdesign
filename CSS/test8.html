@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            height: 400%;
+            /* background-color: antiquewhite; */
+            margin: 0 auto;
+            position: relative;
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        .box:hover .pic{
+            background-color: rgba(0, 0, 0, 0.271);
+        }
+        .box span{
+            position: absolute;
+            background-color: rgb(236, 16, 196);
+            top: 5%;
+            padding: 15px 30px;
+            clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+            font-size: 20px;
+            color: white;
+        }
+        .text{
+            width: 100%;
+            position: absolute;
+            /* background-color: brown; */
+            bottom: 0;
+            padding: 20px 30px;
+        }
+        .title{
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            background-color: burlywood;
+            top: 65%;
+            padding: 0px 30px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .titel h1{
+            margin-bottom: 10px;
+        }
+        .text p{
+            color: white;
+        }
+        .box:hover .title{
+            top: 50%;
+            height: 30%;
+            transition: all 0.3s;
+        }
+        .box:hover .title h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="../image/cute mouse.jpg" alt="">
+        </div>
+        <span>Mouse</span>
+        <div class="title">
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem maxime blanditiis esse voluptates numquam quaerat vel, quo odio assumenda. Delectus dignissimos itaque vel dolorem, temporibus assumenda quibusdam aperiam repudiandae. Iusto.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, dolores. Dolor voluptatum placeat provident magnam! Deserunt debitis ipsum sit, pariatur corporis libero unde maxime vitae atque obcaecati animi autem doloribus.</p>
+        </div>
+        <div class="text">
+            <p>I LOVE YOU</p>
+        </div>
+    </div>
+</body>
+</html>

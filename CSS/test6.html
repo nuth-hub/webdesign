@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1200px;
+            height: 700px;
+            background-color: aqua;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .con-head{
+            width: 100%;
+            height: 15%;
+            background-color: bisque;
+            display: flex;
+            align-items: center;
+        }
+        .con-head ul{
+            display: flex;
+        }
+        .con-head ul li{
+            list-style-type: none;
+            margin-right: 60px;
+            background-color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 3px black;
+        }
+        .con-head ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+        .con-body{
+            width: 100%;
+            height: 85%;
+            background-color: blue;
+        }
+        .up{
+            width: 100%;
+            height: 48%;
+            background-color: brown;
+            display: flex;
+            justify-content: space-between;
+        }
+        .up .box1{
+            width: 30%;
+            height: 100%;
+            /* background-color: blueviolet; */
+            border: 25px solid white;
+        }
+        .down{
+            width: 100%;
+            height: 48%;
+            background-color: burlywood;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .down .box1{
+            width: 30%;
+            height: 100%;
+            background-color: chocolate;
+            border: 25px solid white;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con-head">
+            <ul>
+                <li style="background-color: orange;"><a href="#" style="color: white;">All</a></li>
+                <li><a href="#">Ice Cream</a></li>
+                <li><a href="#">Chocolate</a></li>
+                <li><a href="#">Cake</a></li>
+                <li style="background-color: orange; box-shadow: none;"><a href="#" style="color: white;">Juice</a></li>
+                <li><a href="#">Sandwich</a></li>
+            </ul>
+        </div>
+        <div class="con-body">
+            <div class="up">
+                <div class="box1">
+                    <img src="../image/cat.jpg" alt="">
+                </div>
+                <div class="box1">
+                    <img src="../image/cat with knife.jpg" alt="">
+                </div>
+                <div class="box1">
+                    <img src="../image/cute mouse.jpg" alt="">
+                </div>
+            </div>
+            <div class="down">
+                <div class="box1">
+                    <img src="../image/Brownie Milkshake ~ Recipe _ Queenslee Appétit.jpg" alt="">
+                </div>
+                <div class="box1">
+                    <img src="../image/Korean Street Cheese Corn Dogs Recipe & Video - Seonkyoung Longest.jpg" alt="">
+                </div>
+                <div class="box1">
+                    <img src="../image/17 Horrifying Cake Fails That Will Haunt Your Future Dreams.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

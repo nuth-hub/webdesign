@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    /* background-color: brown; */
+    display: flex;
+    padding: 0px 50px;
+    box-shadow: 0px 0px 10px rgb(190, 190, 188);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.header .logo{
+    width: 25%;
+    height: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    display: flex;
+}
+.header .menu{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.header .menu ul{
+    display: flex;
+}
+.header .menu ul li{
+    list-style-type: none;
+    margin-right: 25px;
+}
+.header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    position: relative;
+}
+.header .menu ul li a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    right: 50%;
+    transition: all 0.3s;
+}
+.header .menu ul li a::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red; 
+    bottom: -5px;
+    left: 50%;
+    transition: all 0.3s;
+}
+.header .menu ul li a:hover::before{
+    width: 50%;
+    transition: all 0.5s;
+}
+.header .menu ul li a:hover::after{
+    width: 50%;
+    transition: all 0.5s;
+}
+.header .icons{
+    width: 25%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+.header .icons ul{
+    display: flex;
+}
+.header .icons ul li{
+    list-style-type: none;
+    margin-left: 25px;
+    position: relative;
+}
+#login{
+    font-size: 13px;
+    color: rgb(84, 83, 83);
+}
+.header .icons ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header .icons ul li a i{
+    font-size: 18px;
+}
+.header .icons ul li span{
+    padding: 3px 7px;
+    background-color: red;
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.banner{
+    width: 100%;
+    height: 80vh;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ban1{
+    width: 49%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.ban2{
+    width: 49%;
+    height: 100%;
+    /* background-color: brown; */
+}
+.ban2 .ban-up{
+    width: 100%;
+    height: 49%;
+    /* background-color: bisque; */
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.ban2 .ban-up .ban-up-left{
+    width: 49%;
+    height: 100%;
+    background-color: rgb(175, 117, 229);
+    position: relative;
+}
+.ban2 .ban-up .ban-up-right{
+    width: 49%;
+    height: 100%;
+    background-color: rgb(205, 229, 117);
+    position: relative;
+}
+.ban1{
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    position: relative;
+}
+.ban1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ban1 .title{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.ban1 .title h1{
+    font-family: "Gwendolyn", cursive;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.ban1 .title p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.ban1 .title a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+.ban1 .title a::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -3px;
+}
+.ban2{
+    width: 49%;
+    height: 100%;
+}
+.ban2 .ban-up .ban-up-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ban2 .ban-up .ban-up-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ban2 .ban-up .ban-up-left .title{
+    width: 200px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.ban2 .ban-up .ban-up-right .title{
+    width: 200px;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+/* =============menu2============ */
+.menu2{
+    width: 80%;
+    height: 70px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+}
+.menu2 .menu2-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    display: flex;
+}
+.menu2-left h2{
+    font-size: 28px;
+    position: relative;
+}
+.menu2-left h2::before{
+    content: "";
+    width: 40%;
+    height: 4px;
+    background-color: red;
+    bottom: -15%;
+    position: absolute;
+}
+.menu2 .menu2-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+.menu2 .menu2-right ul{
+    display: flex;
+}
+.menu2-right ul li{
+    list-style-type: none;
+    margin-left: 40px
+}
+.menu2-right ul li a{
+    text-decoration: none;
+    color: grey;
+    position: relative;
+}
+#all::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    bottom: -35%;
+}
+.product{
+    width: 80%;
+    height: 500px;
+    /* background-color: brown; */
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .product .item .item-text{
+    width: 100%;
+    height: 25%;
+    /background-color: rgb(108, 30, 210); 
+} */
+.product .item{
+    width: 23%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.product .item .item-pic{
+    width: 100%;
+    height: 75%;
+    /* background-color: rgb(42, 165, 120); */
+    position: relative;
+    overflow: hidden;
+}
+.product .item .item-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item .item-pic span{
+    width: 70px;
+    padding: 5px 15px;
+    background-color: rgb(14, 216, 14);
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    color: white;
+}
+.item .item-pic .item-icons {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: -30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.item:hover .item-pic .item-icons{
+    bottom: 0;
+    transition: 0.5s;
+}
+.item-pic .item-icons .box{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-pic .item-icons .box:hover{
+    background-color: red;
+}
+.item-pic .item-icons .box:hover i{
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: white;
+}
+.item-pic .item-icons .box i{
+    font-size: 18px;
+}
+.product .item .item-text{
+    width: 100%;
+    height: 25%;
+    transition: 0.5s;
+    text-align: center;
+    padding: 20px 0px;
+}
+.item .item-text span{
+    font-size: 10px;
+}
+.item .item-text span i{
+    color: gold;
+}
+/* ============== Collection */
+.collection{
+    width: 100%;
+    height: 450px;
+    /* background-color: aqua; */
+    margin-top: 40px;
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.collection .text-col{
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.collection .text-col .txt{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.collection .text-col .box-text{
+    width: 700px;
+    height: auto;
+    /* background-color: burlywood; */
+    text-align: center;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes run{
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translate(0%);
+        transition: 0.5s;
+    }
+    100%{
+        transform: translateX(100%);
+        transition: 1s;
+    }
+}
+/* ================= arrive */
+.arrive{
+    width: 70%;
+    height: 500px;
+    /* background-color: chartreuse; */
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.arrive .arr-item{
+    width: 32%;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+.arrive .arr-item .arr-item-text{
+    width: 100%;
+    height: 15%;
+    /* background-color: blueviolet; */
+}
+.arrive .arr-item .arr-item-text h2{
+    position: relative;
+}
+.arrive .arr-item .arr-item-text h2::before{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: red;
+    bottom: -15%;
+}
+.arrive .arr-item .arr-item-box{
+    width: 100%;
+    height: 26%;
+    /* background-color: cornflowerblue; */
+    margin-bottom: 17px;
+    display: flex;
+}
+.arrive .arr-item .arr-item-box .a-i-box-img{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+}
+.arrive .arr-item .arr-item-box .a-i-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arrive .arr-item .arr-item-box .a-i-box-txt{
+    width: 70%;
+    height: 100%;
+    /* background-color: chocolate; */
+    padding: 0px 20px;
+}
+.arrive .arr-item .arr-item-box .a-i-box-txt span i{
+    font-size: 10px;
+    color: gold;
+    margin: 10px 0px;
+}
+/* ============ discount */
+.discount{
+    width: 85%;
+    height: 380px;
+    /* background-color: chocolate; */
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+}
+.discount .dis-box{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.199);
+    text-align: center;
+}
+.discount .dis-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discount .dis-box .dis-circle{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 50px 0px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#tagh1{
+    width: 300px;
+    position: absolute;
+    font-size: 50px;
+    top: 36%;
+    left: -25%;
+    color: red;
+}
+.dis-box a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    bottom: -30%;
+}
+.dis-box span sub{
+    font-size: 15px;
+}
